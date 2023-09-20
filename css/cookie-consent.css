@@ -1,0 +1,22 @@
+.cookie-consent {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.cookie-consent button {
+    margin: 0 5px;
+}
+
+
+@media screen and (max-width: 430px) {
+    .cookie-consent {
+        width: 100%;
+        left: 0;
+    }
+}

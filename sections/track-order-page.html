@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KERLYS FASHION - Shop Premium Quality Luxury Bags, Shoes, and Jewellery</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <!-- header section -->
+  <!-- announcement banner section -->
+  <section class="announcement-bar">
+    <div id="announcement-banner" class="container-fluid">
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <h6>Free Shipping On All Orders</h6>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <h6>20% OFF On All Items</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of announcement banner section -->
+
+  <!-- Main Navigation -->
+  <section class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/images/website_logo.webp" alt="site-logo" width="150" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu"
+          aria-controls="navbar-main-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main-menu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase active" aria-current="page"
+                href="/sections/all-bags-menu-main-nav.html">Bags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/sections/jewelry-collection.html">Jewellery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/sections/shoes-collection.html">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/sections/our-brands-main-nav.html">Our Brands</a>
+            </li>
+          </ul>
+
+          <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="navbar-search" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <div id="navbar-cart-icon" class="d-flex">
+            <p><a href="/sections/cart-page.html"><i class="fa fa-shopping-cart" style="font-size:30px"></i></a></p>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- end of header section -->
+
+  <!-- tracking order form -->
+  <section class="track-order-form my-5">
+    <div class="container my-5">
+      <h3 class="track-order-page-heading text-center mb-5">TRACK YOUR ORDER</h3>
+      <h6 class="text-start mb-5">You may track your order after 3 business days from submission. Please enter
+        either your order number or your tracking number that you received via email. Then, click on
+        the <em>Track My Order</em> button.
+      </h6>
+      <form>
+        <label class="form-label">Order Number</label>
+        <input class="form-control" type="text" name="ordernumber" placeholder="ex. PJ001" maxlength="10" />
+        <label class="form-label mt-3">Email Address</label>
+        <input class="form-control" type="email" placeholder="john@example.com" name="email" />
+        <button id="track-my-order" class="btn btn-success mt-3">Track My Order</button>
+      </form>
+
+      <h6 class="text-start my-5">You may also send us an email, and our friendly customer support will get
+        back to you within a couple of hours with your tracking details.
+      </h6>
+      <form>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="John Smith">
+          <label for="floatingInput">Full Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="john@example.com">
+          <label for="floatingInput">Email Address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="PJ0001">
+          <label for="floatingInput">Order Number</label>
+        </div>
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea">Your Message</label>
+        </div>
+        <button id="track-my-order-submit" class="btn btn-success mt-3">Submit</button>
+      </form>
+    </div>
+  </section>
+  <!-- end of tracking order form -->
+
+  <!-- Newsletter section -->
+  <section class="newsletter mt-5"
+    style="background-image:url('../images/homepage-photos/newsletter-background-image.webp')">
+    <h2 class="text-center">Let's Stay Connected</h2>
+    <p class="text-center">Don't Miss Our Promotion. Sign up to get your 20% discount off your purchase.</p>
+
+    <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center" action="" target="_blank"
+      method="get">
+      <div class="row container g-3">
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Enter full name" aria-label="City">
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Enter email address" aria-label="State">
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-primary form-control newsletter-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- end of Newsletter section -->
+
+  <!-- Site Footer section -->
+  <section class="site-footer pt-5">
+    <div id="footer"></div>
+  </section>
+  <!-- end of Site Footer section -->
+
+  <script src="/js/bootstrap.min.js" type="text/javascript" defer></script>
+
+  <!-- Update cart item count on the main nav cart icon -->
+  <script src="/js/cartItemCount-mainNav.js"></script>
+
+  <!-- Newsletter Script -->
+  <script src="/js/newsletter.js"></script>
+
+  <!-- Fetch content of footer.html -->
+  <script src="/js/footer.js"></script>
+
+  <!-- Tawk.to Script -->
+  <script src="/js/tawkto.js"></script>
+
+</body>
+
+</html>

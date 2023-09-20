@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KERLYS FASHION - Shop Premium Quality Luxury Bags, Shoes, and Jewellery</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/cart-page.css">
+
+</head>
+
+<body>
+
+  <section class="announcement-bar">
+    <div id="announcement-banner"></div>
+  </section>
+
+  <section class="site-header sticky-top">
+    <div id="main-nav"></div>
+  </section>
+
+  <!-- Cart Page HTML (cart-page.html) -->
+
+  <section class="cart-page-item-desc my-5">
+    <div id="empty-cart-message" class="text-center" style="display: none;">
+      <h2 class="h1 my-4">Your cart is empty.</h2>
+      <h5>Click <a href="/sections/all-bags-menu-main-nav.html" style="text-decoration: none;">HERE</a> to continue
+        shopping.</h5>
+    </div>
+    <div id="cart-items-container">
+      <h2 class="h1 text-center mb-5">Review Your Cart</h2>
+      <div class="item-desc-container justify-content-around d-flex">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="site-footer pt-5">
+    <div id="footer"></div>
+  </section>
+
+  <script src="/js/announcementBanner.js"></script>
+
+  <script src="/js/mainNav.js"></script>
+
+  <script src="/js/footer.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <script src="/js/bootstrap.min.js" type="text/javascript" async></script>
+
+  <script>
+    function displayCartItems() {
+      const cart = JSON.parse(localStorage.getItem("cart"));
+      const cartItemsContainer = document.getElementById("cartItems");
+      const cartTable = document.getElementById("cart-items-container");
+      const emptyCartMessage = document.getElementById("empty-cart-message");
+
+      if (cart && cart.length > 0) { // Update this line
+        cartTable.style.display = "table"; // Update this line
+        cartTable.style.margin = "0 auto";
+
+        cart.forEach((item) => {
+          const row = document.createElement("tr");
+          row.innerHTML = `
+              <td><img src="${item.image}" alt="${item.title}" style="width: 100px;"></td>
+              <td style="text-align: left;">${item.title}</td>
+              <td>$${item.price.toFixed(2)}</td>
+              <td>
+                <button class="minus-button">-</button>
+                <span>${item.quantity}</span>
+                <button class="plus-button">+</button>              
+              </td>
+              <td>$${(item.price * item.quantity).toFixed(2)}</td>
+              <td style="text-align: left;"><button class="trash-icon"><i class="fa fa-trash" style="color: #329BD1;"></i></button></td>
+            `;
+          cartItemsContainer.appendChild(row);
+
+          const quantitySpan = row.querySelector("span");
+          const minusButton = row.querySelector(".minus-button");
+          const plusButton = row.querySelector(".plus-button");
+          const trashIcon = row.querySelector(".trash-icon");
+
+          minusButton.addEventListener("click", function () {
+            updateQuantity(quantitySpan, item, -1);
+          });
+
+          plusButton.addEventListener("click", function () {
+            updateQuantity(quantitySpan, item, 1);
+          });
+
+          trashIcon.addEventListener("click", function () {
+            deleteCartItem(row, item);
+          });
+        });
+      } else { // Add this block
+        cartTable.style.display = "none";
+        emptyCartMessage.style.display = "block";
+      }
+    }
+
+    function updateQuantity(quantitySpan, item, change) {
+      item.quantity += change;
+
+      if (item.quantity < 1) {
+        item.quantity = 1;
+      }
+
+      quantitySpan.textContent = item.quantity;
+      const priceCell = quantitySpan.parentNode.nextElementSibling;
+      const price = item.price * item.quantity;
+      priceCell.textContent = `$${price.toFixed(2)}`;
+    }
+
+    function deleteCartItem(row, item) {
+      const cart = JSON.parse(localStorage.getItem("cart"));
+      const itemIndex = cart.findIndex((cartItem) => cartItem.id === item.id);
+
+      if (itemIndex !== -1) {
+        cart.splice(itemIndex, 1);
+        localStorage.setItem("cart", JSON.stringify(cart));
+        row.remove();
+
+        if (cart.length === 0) {
+          const cartTable = document.getElementById("cart-items-container");
+          const emptyCartMessage = document.getElementById("empty-cart-message"); // Add this line
+          cartTable.style.display = "none";
+          emptyCartMessage.style.display = "block";
+        }
+      }
+    }
+
+    displayCartItems();
+  </script>
+
+
+</body>
+<html>

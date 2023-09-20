@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KERLYS FASHION - Shop Premium Quality Luxury Bags, Shoes, and Jewellery</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/checkout.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="site-header sticky-top mb-5">
+    <div id="checkout-header"></div>
+  </section>
+
+  <!-- Checkout Page Section -->
+  <section class="checkout-page container mb-5">
+    <div class="row">
+      <div class="col-75">
+        <div class="container-checkout-shippingpayment">
+          <form action="https://google.com" method="get" target="_blank">
+
+            <div class="row">
+              <div class="shipping-details">
+                <h3>Shipping Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Edgar Pateño">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="edgar@example.com">
+                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                <input type="text" id="adr" name="address" placeholder="123 Sample Street">
+                <label for="city"><i class="fa fa-institution"></i> City</label>
+                <input type="text" id="city" name="city" placeholder="New York">
+
+                <div class="row">
+                  <div class="shipping-details">
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" placeholder="NY">
+                  </div>
+                  <div class="shipping-details">
+                    <label for="zip">Zip</label>
+                    <input type="text" id="zip" name="zip" placeholder="10001">
+                  </div>
+                </div>
+              </div>
+
+              <div class="payment-details">
+                <h3>Payment Details</h3>
+                <p class="mb-2" style="font-size:12px;">All transactions are secure and encrypted.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment-method" id="creditcard-payment-method">
+                    <label class="form-check-label me-5" for="creditcard-payment-method">Credit Card</label>
+                  </div>
+                  <div class="credit-card-icons-checkout">
+                    <i class="fa fa-cc-visa" style="color:navy;font-size:20px;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;font-size:20px;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;font-size:20px;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;font-size:20px;"></i>
+                  </div>
+                </div>
+
+                <label for="name" class="form-check-label">Name on card</label>
+                <input type="text" id="cname" name="cardname" placeholder="John David">
+                <label for="cc-number" class="form-check-label">Card Number</label>
+                <input type="number" class="form-control" id="ccnum" name="cardnumber"
+                  placeholder="1111-2222-3333-44444">
+                <label for="expiry" class="form-check-label">Expiry Date</label>
+                <input type="date" class="form-control" id="expmonth" name="expmonth" placeholder="02/2030">
+
+                <div class="row">
+                  <div class="payment-details">
+                    <label for="security-code" class="form-check-label">Security Code</label>
+                    <input type="number" class="form-control" id="cvv" name="cvv" placeholder="123">
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment-method" id="paypal-payment-method">
+                    <label class="form-check-label me-5" for="paypal-payment-method">Paypal</label>
+                  </div>
+                  <div class="paypal-icon-checkout">
+                    <img src="/images/icons/PayPal.svg" class="paypal-icon-svg"
+                      style="width:80px; height:70px; position: relative; bottom: 8px;">
+                  </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="payment-method" id="afterpay-payment-method">
+                    <label class="form-check-label me-5" for="afterpay-payment-method">Afterpay</label>
+                  </div>
+                  <div class="afterpay-icon-checkout">
+                    <img src="/images/icons/afterpay-logo-svg.svg" class="afterpay-icon-svg"
+                      style="width:60px; height:30px; position: relative; bottom: 8px;">
+                  </div>
+                </div>
+
+                <hr>
+
+
+              </div>
+
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr"> Billing address same as shipping
+            </label>
+            <input type="submit" value="Complete Payment" class="btn btn-complete-payment">
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="product-details">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of Checkout Page -->
+
+  <!-- Site Footer section -->
+  <section class="site-footer pt-5">
+    <div id="footer"></div>
+  </section>
+  <!-- end of Site Footer section -->
+
+  <script src="/js/checkoutHeader.js"></script>
+
+  <script src="/js/checkout.js"></script>
+
+  <script src="/js/footer.js"></script>
+
+  <script src="/js/bootstrap.min.js" type="text/javascript" defer></script>
+
+</body>
+
+</html>

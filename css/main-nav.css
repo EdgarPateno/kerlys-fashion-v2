@@ -1,0 +1,28 @@
+ul.navbar-nav li a {
+    color: black;
+    letter-spacing: 2px;
+}
+
+ul.navbar-nav li:hover {
+    background-color: #329BD1;
+}
+
+button#navbar-search {
+    background-color: #329BD1;
+    color: white;
+    border-color: #329BD1;
+}
+
+button#navbar-search:hover {
+    background-color: #329BD1;
+}
+
+li.nav-item a.nav-link:hover {
+    color: white;
+}
+
+#navbar-cart-icon a {
+    color: #329BD1;
+    position: relative;
+    top: 9px;
+}

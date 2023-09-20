@@ -1,0 +1,35 @@
+/* global button */
+.btn-primary {
+  background-color: #329BD1;
+  border-color: #329BD1;
+}
+
+.btn-primary:hover {
+  background-color: white !important;
+  border-color: #329BD1 !important;
+  color: #329BD1 !important;
+}
+
+/* global stars */
+.fa-star {
+  color: orange;
+}
+
+/* ---------------------------------------- TRACK ORDER PAGE SECTION ------------------------------------- */
+button#track-my-order {
+  background-color: #329BD1;
+  border-color: #329BD1;
+  width: 200px;
+}
+
+button#track-my-order-submit {
+  background-color: #329BD1;
+  border-color: #329BD1;
+  width: 200px;
+}
+
+
+/* ------------------------------------------ PRODUCT PAGE SECTION --------------------------------------- */
+#product-page-cc-icon {
+  font-size: 2rem;
+}

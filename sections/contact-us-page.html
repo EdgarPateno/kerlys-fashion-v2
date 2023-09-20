@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>KERLYS FASHION - Shop Premium Quality Luxury Bags, Shoes, and Jewellery</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Style inputs */
+  input[type=text],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #329BD1;
+    width: 200px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #329BD1;
+  }
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 768px) {
+
+    .column,
+    input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    div.alcoy-google-map {
+      width: 100%
+    }
+  }
+</style>
+
+<body>
+  <!-- header section -->
+  <!-- announcement banner section -->
+  <section class="announcement-bar">
+    <div id="announcement-banner" class="container-fluid">
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <h6>Free Shipping On All Orders</h6>
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <h6>20% OFF On All Items</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of announcement banner section -->
+
+  <!-- Main Navigation -->
+  <section class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../images/website_logo.webp" alt="site-logo" width="150" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main-menu"
+          aria-controls="navbar-main-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-main-menu">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-uppercase active" aria-current="page"
+                href="/sections/all-bags-menu-main-nav.html">Bags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/sections/jewelry-collection.html">Jewellery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/sections/shoes-collection.html">Shoes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="/sections/our-brands-main-nav.html">Our Brands</a>
+            </li>
+          </ul>
+
+          <form class="d-flex me-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button id="navbar-search" class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+
+          <div id="navbar-cart-icon" class="d-flex">
+            <p><a href="/sections/cart-page.html"><i class="fa fa-shopping-cart" style="font-size:30px"></i></a></p>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- end of header section -->
+
+  <!-- Contact Us Section -->
+  <section class="contact-us-page">
+    <div class="container my-5">
+      <h2 class="contact-us-page-title text-center mb-5">CONTACT US</h2>
+      <p>Our team is strong and efficient, and our products are of high quality, but we are not perfect. We do
+        make mistakes, but we are willing to resolve whatever it is.</p>
+      <p>Please allow us to resolve your issues, and we promise that you will leave our store happy and satisfied. </p>
+      <p>Kindly shoot us a message at support@patenojewellers.com or use this form below.</p>
+    </div>
+    <div class="row container-fluid">
+      <div class="column alcoy-google-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125840.33686483405!2d123.39946397775563!3d9.722750027973502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33abbddafece6bfb%3A0xf15a0cc4c94d0d76!2sAlcoy%2C%20Cebu!5e0!3m2!1sen!2sph!4v1664767169289!5m2!1sen!2sph"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="column">
+        <form action="https://google.com" method="get" target="_blank">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Your full name..">
+          <label for="email">Email Address</label>
+          <input type="text" id="emailaddress" name="email" placeholder="Your email address.." required>
+          <label for="phonenumber">Phone Number</label>
+          <input type="text" id="phonenumber" name="phonenumber" placeholder="Your phone number here..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write your message.." style="height:170px"></textarea>
+          <input class="form-control" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- end of Contact Us Section -->
+
+  <!-- Newsletter section -->
+  <section class="newsletter mt-5"
+    style="background-image:url('../images/homepage-photos/newsletter-background-image.webp')">
+    <h2 class="text-center">Let's Stay Connected</h2>
+    <p class="text-center">Don't Miss Our Promotion. Sign up to get your 20% discount off your purchase.</p>
+
+    <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center" action="" target="_blank"
+      method="get">
+      <div class="row container g-3">
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Enter full name" aria-label="City">
+        </div>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" placeholder="Enter email address" aria-label="State">
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="btn btn-primary form-control newsletter-subscribe">Subscribe</button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <!-- end of Newsletter section -->
+
+  <!-- Site Footer section -->
+  <section class="site-footer pt-5">
+    <div id="footer"></div>
+  </section>
+  <!-- end of Site Footer section -->
+
+  <script src="/js/bootstrap.min.js" type="text/javascript" defer></script>
+
+  <!-- Update cart item count on the main nav cart icon -->
+  <script src="/js/cartItemCount-mainNav.js"></script>
+
+  <!-- Newsletter Script -->
+  <script src="/js/newsletter.js"></script>
+
+  <!-- Fetch content of footer.html -->
+  <script src="/js/footer.js"></script>
+
+  <!-- Tawk.to Script -->
+  <script src="/js/tawkto.js"></script>
+
+</body>
+<html>

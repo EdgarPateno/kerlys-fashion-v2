@@ -1,0 +1,55 @@
+.jewelry-video-banner-homepage .container-liquid {
+    position: relative;
+}
+
+.jewelry-video-banner-homepage-textbox {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+}
+
+.jewelry-video-banner-homepage-textbox span.unveil-radiance {
+    color: #329BD1;
+}
+
+.jewelry-video-banner-homepage-textbox span.jewelry-obsession {
+    color: white;
+}
+
+.jewelry-video-banner-homepage-textbox h3 {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 834px) {
+    .jewelry-video-banner-homepage-textbox h3 {
+        font-size: 3rem;
+    }
+
+    .jewelry-video-banner-homepage-textbox h3.mb-4 {
+        margin-bottom: 1rem !important;
+    }
+
+    .jewelry-video-banner-homepage-textbox {
+        position: absolute;
+        top: 40%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .jewelry-video-banner-homepage-textbox h3 {
+        font-size: 20px;
+    }
+
+    .jewelry-video-banner-homepage-textbox h3.mb-4 {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .jewelry-video-banner-homepage-textbox {
+        position: absolute;
+        top: 30%;
+    }
+
+    .jewelry-video-banner-homepage.py-5 {
+        padding: 2rem 0 !important;
+    }
+}

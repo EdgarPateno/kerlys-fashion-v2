@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KERLYS FASHION - Shop Premium Quality Bags, Jewellery, and other Accessories</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+
+    /* Hide the images by default */
+    .daenarys-pp-Slides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 40%;
+        width: auto;
+        padding: 10px;
+        margin-top: -50px;
+        color: white;
+        background-color: #329BD1;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: none;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+        float: left;
+        width: 19.99%;
+    }
+
+    /* Add a transparency effect for thumbnail images */
+    .daenarys-pp {
+        opacity: 0.6;
+    }
+
+    .active,
+    .daenarys-pp:hover {
+        opacity: 1;
+    }
+
+    div#free-shipping-product-form {
+        width: 350px;
+        border-color: #329BD1;
+    }
+
+    ul.nav.nav-tabs .nav-link {
+        color: black;
+    }
+
+    ul.nav.nav-tabs .nav-link.active {
+        background-color: #329BD1;
+        color: white;
+    }
+
+    .nav-tabs {
+        --bs-nav-tabs-border-color: #329BD1;
+    }
+
+    .daenarys-product-page .card {
+        border: none;
+    }
+
+    .daenarys-product-page .g-4 {
+        --bs-gutter-x: 5rem;
+    }
+</style>
+
+<body>
+
+    <!-- announcement banner section -->
+    <section class="announcement-bar">
+        <div id="announcement-banner" class="container-fluid">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <h6>Free Shipping On All Orders</h6>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <h6>20% OFF On All Items</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of announcement banner section -->
+
+    <!-- logo and main navigation section -->
+    <section class="site-header sticky-top">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/website_logo.webp" alt="site-logo" width="150" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbar-main-menu" aria-controls="navbar-main-menu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-main-menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase active" aria-current="page"
+                                href="all-bags-menu-main-nav.html">Bags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="jewelry-collection.html">Jewellery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="shoes-collection.html">Shoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="our-brands-main-nav.html">Our Brands</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex me-3" role="search" onsubmit="searchProducts(); return false;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"
+                            id="searchInput">
+                        <button id="navbar-search" class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+
+                    <div id="navbar-cart-icon" class="d-flex">
+                        <p><a href="cart-page.html"><i class="fa fa-shopping-cart" style="font-size:30px"></i></a></p>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- end of logo and main navigation section -->
+
+    <section class="daenarys-product-page container-sm">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+                <div class="card my-5">
+                    <div class="container">
+                        <div class="daenarys-pp-Slides">
+                            <img src="images/lv-bags-collection/daenarys/daenarys1.webp" style="width:100%">
+                        </div>
+
+                        <div class="daenarys-pp-Slides">
+                            <img src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Back view.avif"
+                                style="width:100%">
+                        </div>
+
+                        <div class="daenarys-pp-Slides">
+                            <img src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Interior view.avif"
+                                style="width:100%">
+                        </div>
+
+                        <div class="daenarys-pp-Slides">
+                            <img src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Interior2 view.avif"
+                                style="width:100%">
+                        </div>
+
+                        <div class="daenarys-pp-Slides">
+                            <img src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Side view.avif"
+                                style="width:100%">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                        <p>&nbsp;</p>
+                        <div class="row">
+                            <div class="column">
+                                <img class="daenarys-pp cursor"
+                                    src="images/lv-bags-collection/daenarys/daenarys1.webp" style="width:100%"
+                                    onclick="currentSlide(1)" alt="">
+                            </div>
+                            <div class="column">
+                                <img class="daenarys-pp cursor"
+                                    src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Back view.avif"
+                                    style="width:100%" onclick="currentSlide(2)" alt="">
+                            </div>
+                            <div class="column">
+                                <img class="daenarys-pp cursor"
+                                    src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Interior view.avif"
+                                    style="width:100%" onclick="currentSlide(3)" alt="">
+                            </div>
+                            <div class="column">
+                                <img class="daenarys-pp cursor"
+                                    src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Interior2 view.avif"
+                                    style="width:100%" onclick="currentSlide(4)" alt="">
+                            </div>
+                            <div class="column">
+                                <img class="daenarys-pp cursor"
+                                    src="images/lv-bags-collection/daenarys/louis-vuitton-twist-pm-other-leathers-handbags--M22035_PM1_Side view.avif"
+                                    style="width:100%" onclick="currentSlide(5)" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("daenarys-pp-Slides");
+                            let dots = document.getElementsByClassName("daenarys-pp");
+                            let captionText = document.getElementById("caption");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            captionText.innerHTML = dots[slideIndex - 1].alt;
+                        }
+                    </script>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <small>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span>300 Trusted Reviews</span>
+                        </small>
+                        <h5 class="h1" id="productTitle">Daenarys</h5>
+                        <div class="h5" id="productPrice">$600 USD <del class="mx-2">$700</del>
+                            <span id="save-badge" class="badge badge-save50 bg-danger">Save
+                                $100</span>
+                        </div>
+
+
+                        <div class="free-shipping-product-form my-3">
+                            <img src="images/icons/free-shipping-icon.png"> <small>Free Express Shipping<br>
+                                Order now, delivery in 3-5 business days.</small>
+                        </div>
+
+                        <div class="row">
+
+                        </div>
+
+                        <div class="quantity">
+                            <label for="quantity" class="mb-1">Quantity</label>
+                        </div>
+                        <div>
+                            <input class="form-control text-center" style="width:150px;" type="number" name="quantity"
+                                id="productQuantity" min="1" value="1" />
+                        </div>
+
+                        <div class="add-to-cart-button my-4">
+                            <button id="addToCartButton" class="btn btn-primary" style="width:150px;">Add to
+                                Cart</button>
+                        </div>
+
+                        <div class="productpage-secure-checkout-cc-icons">
+                            <h6 style="font-size:13px;">SAFE AND SECURE CHECKOUT WITH:</h6>
+                            <i class="fa fa-cc-visa" id="product-page-cc-icon"></i>
+                            <i class="fa fa-cc-amex" id="product-page-cc-icon"></i>
+                            <i class="fa fa-cc-mastercard" id="product-page-cc-icon"></i>
+                            <i class="fa fa-cc-discover" id="product-page-cc-icon"></i>
+                            <i class="fa fa-cc-paypal" id="product-page-cc-icon"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of Product Page Image Gallery and Form section -->
+
+    <!-- Product Description tabs -->
+    <section class="product-description-tabs-desktop my-5">
+        <div class="container-sm">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                        data-bs-target="#description-tab-pane" type="button" role="tab"
+                        aria-controls="description-tab-pane" aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="shipping-tab" data-bs-toggle="tab" data-bs-target="#shipping-tab-pane"
+                        type="button" role="tab" aria-controls="shipping-tab-pane"
+                        aria-selected="false">Shipping</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="return-tab" data-bs-toggle="tab" data-bs-target="#return-tab-pane"
+                        type="button" role="tab" aria-controls="return-tab-pane" aria-selected="false">Refund</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="guarantee-tab" data-bs-toggle="tab"
+                        data-bs-target="#guarantee-tab-pane" type="button" role="tab" aria-controls="guarantee-tab-pane"
+                        aria-selected="false">Guarantee</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="description-tab-pane" role="tabpanel"
+                    aria-labelledby="description-tab" tabindex="0">
+                    <div class="mt-5">
+                        <p>
+                            Introducing the exquisite daenarys Luxury Bag – a true embodiment of elegance and
+                            sophistication. Crafted
+                            with the utmost precision and attention to detail, this masterpiece redefines luxury in
+                            every sense.</p>
+
+                        <p>Enveloped in the gentle embrace of a soothing baby blue hue, the daenarys Luxury Bag exudes
+                            an
+                            aura of
+                            timeless charm and refined beauty. The color evokes a sense of tranquility and grace, making
+                            it the
+                            perfect companion for any occasion, whether it be a casual outing or a glamorous soirée.</p>
+
+                        <p>Indulge in the opulence of genuine leather as your fingertips graze across the impeccably
+                            smooth surface
+                            of the daenarys bag. This carefully selected leather not only enhances the bag's durability
+                            but also lends
+                            an air of exclusivity, ensuring that your accessory stands the test of time while becoming a
+                            symbol of
+                            your
+                            impeccable taste.</p>
+
+                        <p>Designed for both aesthetics and functionality, the daenarys Luxury Bag features a
+                            meticulously crafted
+                            strap that elegantly drapes over your shoulder or can be adjusted to hang gracefully from
+                            your arm. The
+                            strap complements the bag's baby blue exterior, adding an extra layer of refinement to the
+                            overall design.
+                            It
+                            strikes a harmonious balance between comfort and style, allowing you to carry your
+                            essentials with
+                            effortless grace.</p>
+
+                        <p>Unveil the interior, and you'll be greeted by a spacious compartment thoughtfully designed to
+                            accommodate your belongings with ease. Whether it's your daily essentials or treasured
+                            possessions, the
+                            daenarys Luxury Bag offers ample room without compromising on its sleek and slim profile.
+                        </p>
+
+                        <p>Indulge in the allure of daenarys – where baby blue meets genuine leather, where
+                            sophistication meets
+                            functionality. Elevate your every ensemble and make a statement that echoes through the
+                            realms of luxury
+                            fashion. With the daenarys Luxury Bag by your side, you're not just carrying a bag; you're
+                            carrying a work
+                            of art that mirrors your discerning style and unparalleled elegance.</p>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="shipping-tab-pane" role="tabpanel" aria-labelledby="shipping-tab"
+                    tabindex="0">
+                    <p class="mt-5">When you place your order, we know that you want to receive the item as fast as
+                        possible. We
+                        will make that happen.</p>
+                    <p>How long will the entire ordering process take from order submission to delivery?</p>
+                    <p>We will do our best to deliver your product as fast as possible, depending on your location.</p>
+                    <p class="display-6">USA only:</p>
+                    <ul>
+                        <li>Standard Shipping: 5-10 Business Days via USPS (expect a slight delay due to COVID)</li>
+                        <li>Express Shipping: 3-5 Business Days via FedEx </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="return-tab-pane" role="tabpanel" aria-labelledby="return-tab"
+                    tabindex="0">
+                    <p class="mt-5">We have a pretty straightforward and simple return, refund, and exchange policy.</p>
+                    <p>When you receive your order and want to exchange it with a different product, it MUST be
+                        unopened, unused,
+                        in original packaging, and with all the labels. First, you will need to contact us stating your
+                        reason for
+                        exchange. Then, you will need to ship the original order back to us, at your own expense. Once
+                        we receive
+                        it, we will inspect
+                        if it's unopened, unused, in original packaging, and with all the labels. Then, we will issue a
+                        store
+                        credit in the form of a code, and you will use that code to make a new purchase.</p>
+                    <p>When you receive your order and have changed your mind and you want to return it, it MUST be
+                        unopened,
+                        unused, in original packaging, and with all the labels. First, you will need to contact us
+                        stating your
+                        reason for returning the item/s. Then, you will need to ship the original order back to us, at
+                        your own
+                        expense. Once
+                        we receive it, we will inspect if it's unopened, unused, in original packaging, and with all the
+                        labels.
+                        Then, we will issue a store credit only in the form of a code, not a full refund.</p>
+                </div>
+                <div class="tab-pane fade" id="guarantee-tab-pane" role="tabpanel" aria-labelledby="guarantee-tab"
+                    tabindex="0">
+                    <p class="mt-5">Our Guarantee of Uncompromising Excellence:</p>
+                    <p>At KERLYS FASHION, we take great pride in the craftsmanship and quality of our luxury
+                        shoes. We stand firmly behind the excellence of our products and offer a comprehensive
+                        guarantee to ensure your absolute satisfaction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-description-tabs-mobile my-5" style="display: none;">
+        <div class="accordion accordion-flush" id="accordion-prod-desc-tabs-mobile">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-desc" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Description
+                    </button>
+                </h2>
+                <div id="flush-collapse-desc" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-prod-desc-tabs-mobile">
+                    <div class="accordion-body">
+                        <div class="mt-5">
+                            <p>
+                                Introducing the exquisite daenarys Luxury Bag – a true embodiment of elegance and
+                                sophistication. Crafted
+                                with the utmost precision and attention to detail, this masterpiece redefines luxury in
+                                every sense.</p>
+
+                            <p>Enveloped in the gentle embrace of a soothing baby blue hue, the daenarys Luxury Bag
+                                exudes an aura of
+                                timeless charm and refined beauty. The color evokes a sense of tranquility and grace,
+                                making it the
+                                perfect companion for any occasion, whether it be a casual outing or a glamorous soirée.
+                            </p>
+
+                            <p>Indulge in the opulence of genuine leather as your fingertips graze across the impeccably
+                                smooth
+                                surface of the daenarys bag. This carefully selected leather not only enhances the bag's
+                                durability but
+                                also lends an air of exclusivity, ensuring that your accessory stands the test of time
+                                while becoming a
+                                symbol of your impeccable taste.</p>
+
+                            <p>Designed for both aesthetics and functionality, the daenarys Luxury Bag features a
+                                meticulously crafted
+                                strap that elegantly drapes over your shoulder or can be adjusted to hang gracefully
+                                from your arm. The
+                                strap complements the bag's baby blue exterior, adding an extra layer of refinement to
+                                the overall
+                                design. It strikes a harmonious balance between comfort and style, allowing you to carry
+                                your essentials
+                                with
+                                effortless grace.</p>
+
+                            <p>Unveil the interior, and you'll be greeted by a spacious compartment thoughtfully
+                                designed to
+                                accommodate your belongings with ease. Whether it's your daily essentials or treasured
+                                possessions, the
+                                daenarys Luxury Bag offers ample room without compromising on its sleek and slim
+                                profile.
+                            </p>
+
+                            <p>Indulge in the allure of daenarys – where baby blue meets genuine leather, where
+                                sophistication meets
+                                functionality. Elevate your every ensemble and make a statement that echoes through the
+                                realms of luxury
+                                fashion. With the daenarys Luxury Bag by your side, you're not just carrying a bag;
+                                you're carrying a
+                                work of art that mirrors your discerning style and unparalleled elegance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-shipping" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        Shipping
+                    </button>
+                </h2>
+                <div id="flush-collapse-shipping" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-prod-desc-tabs-mobile">
+                    <div class="accordion-body">
+                        <p class="mt-3">When you place your order, we know that you want to receive the item as fast as
+                            possible. We
+                            will make that happen.</p>
+                        <p>How long will the entire ordering process take from order submission to delivery?</p>
+                        <p>We will do our best to deliver your product as fast as possible, depending on your location.
+                        </p>
+                        <p class="display-6">USA only:</p>
+                        <ul>
+                            <li>Standard Shipping: 5-10 Business Days via USPS (expect a slight delay due to COVID)</li>
+                            <li>Express Shipping: 3-5 Business Days via FedEx </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-refund" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Refund
+                    </button>
+                </h2>
+                <div id="flush-collapse-refund" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-prod-desc-tabs-mobile">
+                    <div class="accordion-body">
+                        <p class="mt-3">We have a pretty straightforward and simple return, refund, and exchange policy.
+                        </p>
+                        <p>When you receive your order and want to exchange it with a different product, it MUST be
+                            unopened,
+                            unused, in original packaging, and with all the labels. First, you will need to contact us
+                            stating your
+                            reason for exchange. Then, you
+                            will need to ship the original order back to us, at your own expense. Once we receive it, we
+                            will inspect
+                            if it's unopened, unused, in original packaging, and with all the labels. Then, we will
+                            issue a store
+                            credit in the form of a code, and you will use that code to make a new purchase.
+                        </p>
+                        <p>When you receive your order and have changed your mind and you want to return it, it MUST be
+                            unopened,
+                            unused, in original packaging, and with all the labels. First, you will need to contact us
+                            stating your
+                            reason for
+                            returning the item/s. Then, you will need to ship the original order back to us, at your own
+                            expense. Once
+                            we receive it, we will inspect if it's unopened, unused, in original packaging, and with all
+                            the labels.
+                            Then, we will issue a store credit only in the form of a code, not a full refund.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapse-guarantee" aria-expanded="false"
+                        aria-controls="flush-collapseThree">
+                        Guarantee
+                    </button>
+                </h2>
+                <div id="flush-collapse-guarantee" class="accordion-collapse collapse"
+                    data-bs-parent="#accordion-prod-desc-tabs-mobile">
+                    <div class="accordion-body">
+                        <p class="mt-3">Our Guarantee of Uncompromising Excellence:</p>
+                        <p>At KERLYS FASHION, we take great pride in the craftsmanship and quality of our luxury
+                            shoes. We stand firmly behind the excellence of our products and offer a comprehensive
+                            guarantee to ensure your absolute satisfaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter section -->
+    <section class="newsletter mt-5"
+        style="background-image:url('images/homepage-photos/newsletter-background-image.png')">
+        <h2 class="text-center">Let's Stay Connected</h2>
+        <p class="text-center">Don't Miss Our Promotion. Sign up to get your 20% discount off your purchase.</p>
+
+        <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center" action="https://google.com"
+            target="_blank" method="get">
+            <div class="row container g-3">
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Enter full name" aria-label="City">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Enter email address" aria-label="State">
+                </div>
+                <div class="col-sm-4">
+                    <button type="submit" class="btn btn-primary form-control newsletter-subscribe">Subscribe</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <!-- end of Newsletter section -->
+
+    <!-- Site Footer section -->
+    <section class="site-footer pt-5">
+        <div id="footer"></div>
+    </section>
+    <!-- end of Site Footer section -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" defer></script>
+
+    <!-- Store product information in local storage -->
+    <script>
+        const productInfo = {
+            title: "Daenarys",
+            price: 600,
+            image: "images/lv-bags-collection/daenarys/daenarys1.webp",
+            description: "luxury bag for women"
+        };
+
+        localStorage.setItem("productInfo", JSON.stringify(productInfo));
+    </script>
+
+    <script src="js/addToCart.js"></script>
+
+    <script src="js/newsletter.js"></script>
+
+    <!-- Fetch content of footer.html -->
+    <script src="js/footer.js"></script>
+
+    <script src="js/tawkto.js"></script>
+
+</body>
+
+</html>

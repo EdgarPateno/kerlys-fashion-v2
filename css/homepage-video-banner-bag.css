@@ -1,0 +1,60 @@
+.btn-primary {
+    background-color: #329BD1;
+    border-color: #329BD1;
+}
+
+a.btn.btn-primary:hover {
+    background-color: white;
+    border-color: #329BD1;
+    color: #329BD1;
+}
+
+.homepage-video-banner-bag .container-liquid {
+    position: relative;
+}
+
+.homepage-video-banner-bag-textbox {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+}
+
+.homepage-video-banner-bag-textbox .unleash-style {
+    color: #329BD1;
+}
+
+.homepage-video-banner-bag-textbox span.confidence {
+    color: white;
+}
+
+.homepage-video-banner-bag-textbox h3 {
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width: 834px) {
+
+    .homepage-video-banner-bag-textbox h3 {
+        font-size: 3rem;
+    }
+
+    .homepage-video-banner-bag-textbox h3.mb-4 {
+        margin-bottom: 1rem !important;
+    }
+
+    .homepage-video-banner-bag-textbox {
+        position: absolute;
+        top: 40%;
+    }
+
+}
+
+@media screen and (max-width: 430px) {
+    .homepage-video-banner-bag-textbox h3 {
+        font-size: 1.5rem;
+    }
+
+    .homepage-video-banner-bag-textbox {
+        top: 35%;
+    }
+}

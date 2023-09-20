@@ -1,0 +1,42 @@
+.shoes-homepage-banner-video .container-liquid {
+    position: relative;
+}
+
+.shoes-homepage-banner-video-textbox {
+    position: absolute;
+    top: 50%;
+    right: 3%;
+}
+
+.shoes-homepage-banner-video-textbox .elegance {
+    color: #329BD1;
+}
+
+.shoes-homepage-banner-video-textbox .comfort {
+    color: white;
+}
+
+.shoes-homepage-banner-video-textbox h3 {
+    font-size: 4rem;
+}
+
+@media screen and (max-width: 430px) {
+
+    .shoes-homepage-banner-video-textbox h3 {
+        font-size: 20px;
+    }
+
+    .shoes-homepage-banner-video-textbox h3.mb-4 {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .shoes-homepage-banner-video-textbox {
+        position: absolute;
+        top: 30%;
+        right: 3%;
+    }
+
+    .shoes-homepage-banner-video.py-5 {
+        padding: 2rem 0 !important;
+    }
+}

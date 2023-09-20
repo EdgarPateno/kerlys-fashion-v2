@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.aeliana-pp-Slides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    color: white;
+    background-color: #329BD1;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: none;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 19.99%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.aeliana-pp {
+    opacity: 0.6;
+}
+
+.active,
+.aeliana-pp:hover {
+    opacity: 1;
+}
+
+div#free-shipping-product-form {
+    width: 350px;
+    border-color: #329BD1;
+}
+
+ul.nav.nav-tabs .nav-link {
+    color: black;
+}
+
+ul.nav.nav-tabs .nav-link.active {
+    background-color: #329BD1;
+    color: white;
+}
+
+.nav-tabs {
+    --bs-nav-tabs-border-color: #329BD1;
+}
+
+.aeliana-product-page .card {
+    border: none;
+}
+
+.aeliana-product-page .g-4 {
+    --bs-gutter-x: 5rem;
+}

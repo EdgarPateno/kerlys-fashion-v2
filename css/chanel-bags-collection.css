@@ -1,0 +1,20 @@
+.chanel-bags-collection-image-banner .container-liquid {
+    position: relative;
+}
+
+.chanel-bags-collection-image-banner-title h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+.chanel-bags-collection div.card {
+    border: none;
+}
+
+.chanel-bags-collection a {
+    text-decoration: none;
+    color: black;
+}

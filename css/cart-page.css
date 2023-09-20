@@ -1,0 +1,70 @@
+table {
+    border-collapse: collapse;
+    border-spacing: 20px 0;
+}
+
+th {
+    color: black;
+}
+
+th,
+td {
+    width: 9rem;
+    text-align: center;
+    padding: 5px 0;
+}
+
+th.total-heading,
+td.subtotal-cart-page,
+td.checkout-button-cart,
+td.item-price-cart {
+    text-align: right;
+}
+
+.subTotalCart {
+    font-weight: bold;
+}
+
+#delete-button-cart {
+    background: none;
+    border: none;
+    color: #329BD1;
+}
+
+@media only screen and (max-width: 430px) {
+    table {
+        border-collapse: separate;
+    }
+
+    th,
+    td {
+        width: auto;
+    }
+
+    td img {
+        width: 5rem !important;
+    }
+
+    th.total-heading,
+    td.subtotal-cart-page,
+    td.item-price-cart {
+        text-align: center;
+    }
+
+    .subTotalCart,
+    .checkout-button-cart button {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    td img {
+        width: 2rem !important;
+    }
+
+    td {
+        padding: 2px;
+    }
+}

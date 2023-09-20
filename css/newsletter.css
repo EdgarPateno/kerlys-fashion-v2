@@ -1,0 +1,15 @@
+section.newsletter {
+    background-image: url('../images/homepage-photos/newsletter-background-image.webp');
+    padding: 50px;
+}
+
+.newsletter-subscribe {
+    background-color: #329BD1 !important;
+    border-color: #329BD1 !important;
+    color: white;
+}
+
+body>section.newsletter.mt-5>p:nth-child(4) {
+    text-align: center;
+    margin-top: 2rem;
+}

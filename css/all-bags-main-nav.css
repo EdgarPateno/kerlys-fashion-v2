@@ -1,0 +1,24 @@
+.all-bags-main-nav-banner img {
+    width: 100%;
+}
+
+.all-bags-collection .card {
+    border: none;
+}
+
+.all-bags-collection a {
+    text-decoration: none;
+    color: black;
+}
+
+.all-bags-main-nav-banner .container-liquid {
+    position: relative;
+}
+
+.all-bags-main-nav-banner-title h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}

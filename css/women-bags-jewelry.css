@@ -1,0 +1,39 @@
+.womens-bags-jewellery-img-text-overlay img {
+    max-width: 100%;
+}
+
+div.womens-bags-text-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+div.womens-bags-text-overlay h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(50, 155, 209, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.womens-jewellery-text-overlay {
+    position: relative;
+    display: inline-block;
+}
+
+div.womens-jewellery-text-overlay h2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(50, 155, 209, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.women-bags-jewellery-img-text-overlay-wrapper a {
+    text-decoration: none;
+}

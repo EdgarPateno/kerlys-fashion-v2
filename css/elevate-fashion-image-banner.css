@@ -1,0 +1,56 @@
+.elevate-fashion-image-banner img {
+    max-width: 100%;
+}
+
+.elevate-fashion-image-banner-container {
+    position: relative;
+}
+
+.elevate-fashion-text-overlay-box {
+    position: absolute;
+    top: 35%;
+    left: 3%;
+}
+
+.elevate-fashion-text-overlay-box h3 {
+    font-size: 4rem;
+}
+
+.elevate-fashion-text-overlay-box span.elevate-fashion {
+    color: #329BD1;
+}
+
+.elevate-fashion-text-overlay-box span.embrace-luxury {
+    color: white;
+}
+
+@media screen and (max-width: 834px) {
+    .elevate-fashion-text-overlay-box h3 {
+        font-size: 3rem;
+    }
+
+    .elevate-fashion-text-overlay-box h3.mb-4 {
+        margin-bottom: 1rem !important;
+    }
+
+    .elevate-fashion-text-overlay-box {
+        position: absolute;
+        top: 40%;
+        left: 3%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .elevate-fashion-text-overlay-box h3 {
+        font-size: 20px;
+    }
+
+    .elevate-fashion-text-overlay-box h3.mb-4 {
+        margin-bottom: 0.5rem !important;
+    }
+
+    .elevate-fashion-image-banner.py-5 {
+        padding: 2rem 0 !important;
+    }
+}

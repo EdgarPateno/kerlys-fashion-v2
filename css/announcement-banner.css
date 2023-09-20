@@ -1,0 +1,7 @@
+div#announcement-banner {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 4px;
+}

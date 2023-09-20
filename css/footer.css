@@ -1,0 +1,53 @@
+/* Footer CSS */
+section.site-footer {
+    background-color: black;
+    color: white;
+}
+
+section.site-footer ul.list-unstyled li a {
+    text-decoration: none;
+    color: white;
+}
+
+section.site-footer ul.list-unstyled li a:hover {
+    color: #329BD1;
+}
+
+section.site-footer div div div div.card {
+    border: none;
+}
+
+
+ul.list-unstyled.follow-us li a {
+    color: #329BD1;
+    font-size: 30px;
+}
+
+.phone-number-footer {
+    position: relative;
+    bottom: 3px;
+}
+
+/* end of Footer Section */
+
+/* ----------------------------------------- FOOTER BOTTOM SECTION ---------------------------------------- */
+section.footer-bottom {
+    background-color: black;
+    color: white;
+}
+
+a.site-logo-footer-bottom {
+    text-decoration: none;
+    color: white;
+}
+
+a.site-logo-footer-bottom:hover {
+    color: #329BD1;
+}
+
+i#payment-method-footer-bottom {
+    color: white;
+    font-size: 30px;
+}
+
+/* end of Footer Bottom Section */
