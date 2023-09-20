@@ -1,5 +1,5 @@
 table {
-    border-collapse: collapse;
+    border-collapse: separate;
     border-spacing: 20px 0;
 }
 
@@ -33,7 +33,7 @@ td.item-price-cart {
 
 @media only screen and (max-width: 430px) {
     table {
-        border-collapse: separate;
+        border-collapse: collapse;
     }
 
     th,
