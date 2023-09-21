@@ -25,10 +25,13 @@ td.item-price-cart {
     font-weight: bold;
 }
 
-#delete-button-cart {
-    background: none;
+button.trash-icon {
     border: none;
-    color: #329BD1;
+}
+
+.minus-button,
+.plus-button {
+    border: 1px solid lightgrey;
 }
 
 @media only screen and (max-width: 430px) {
