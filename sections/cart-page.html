@@ -37,7 +37,6 @@
           <thead>
             <tr>
               <th colspan="2">Product</th>
-              <th>Price</th>
               <th>Quantity</th>
               <th>Total</th>
             </tr>
@@ -72,16 +71,19 @@
       const cartTable = document.getElementById("cart-items-container");
       const emptyCartMessage = document.getElementById("empty-cart-message");
 
-      if (cart && cart.length > 0) { // Update this line
-        cartTable.style.display = "table"; // Update this line
+      if (cart && cart.length > 0) {
+        cartTable.style.display = "table";
         cartTable.style.margin = "0 auto";
 
         cart.forEach((item) => {
           const row = document.createElement("tr");
           row.innerHTML = `
               <td><img src="${item.image}" alt="${item.title}" style="width: 100px;"></td>
-              <td style="text-align: left;">${item.title}</td>
-              <td>$${item.price.toFixed(2)}</td>
+              <td style="text-align: left;">
+                <p style="margin-bottom: 0;">${item.title}</p>
+                <p>$${item.price.toFixed(2)}</p>
+              </td>
+              
               <td>
                 <button class="minus-button">-</button>
                 <span>${item.quantity}</span>

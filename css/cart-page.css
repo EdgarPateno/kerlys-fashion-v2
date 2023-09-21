@@ -42,6 +42,7 @@ button.trash-icon {
     th,
     td {
         width: auto;
+        padding: 0 10px;
     }
 
     td img {
@@ -68,6 +69,6 @@ button.trash-icon {
     }
 
     td {
-        padding: 2px;
+        padding: 8px;
     }
 }
